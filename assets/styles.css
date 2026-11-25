@@ -1,0 +1,67 @@
+/* Portfolio foundations. Refinement guided by unslop, Damir Sokolovsky
+   https://github.com/heydamir/unslop — CC BY 4.0. */
+:root {
+  color-scheme: dark;
+  --bg: #0a0a0a;
+  --bg-2: #111111;
+  --surface: #171717;
+  --text: #ededed;
+  --muted: #aaaaaa;
+  --subtle: #858585;
+  --line: #242424;
+  --accent: #b99aff;
+  --accent-ink: #211336;
+  --card-bg: #0e0e0e;
+  --line-hover: #3a3a3a;
+  --writing-bg: #121016;
+  --writing-line: #30283d;
+  --primary-hover: #ffffff;
+  --max: 1180px;
+  --font: 'Manrope', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --mono: ui-monospace, SFMono-Regular, Consolas, monospace;
+  --ease: cubic-bezier(.22, 1, .36, 1);
+  --feedback: 160ms;
+}
+
+html[data-theme='light'] {
+  color-scheme: light;
+  --bg: #fafafa;
+  --bg-2: #f2f2f5;
+  --surface: #e9e9ee;
+  --text: #1c1c21;
+  --muted: #5c5b64;
+  --subtle: #6c6a76;
+  --line: #dedde4;
+  --accent: #7040b5;
+  --accent-ink: #ffffff;
+  --card-bg: #ffffff;
+  --line-hover: #aaa5b5;
+  --writing-bg: #f3eff9;
+  --writing-line: #dcd2eb;
+  --primary-hover: #33313a;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: var(--bg); color: var(--text); font: 400 16px/1.75 var(--font); -webkit-font-smoothing: antialiased; }
+body, button, input { font-family: var(--font); }
+h1, h2, h3, p, figure, dl { margin: 0; }
+h1, h2, h3 { font-weight: 500; line-height: 1.3; }
+a { color: inherit; text-decoration: none; }
+button, input { font: inherit; }
+button { cursor: pointer; }
+img, svg { max-width: 100%; }
+svg { flex-shrink: 0; }
+code, pre { font-family: var(--mono); }
+strong { font-weight: 500; }
+::selection { color: var(--accent-ink); background: var(--accent); }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+.container { width: 100%; max-width: var(--max); margin-inline: auto; padding-inline: 32px; }
+.sr-only { position: absolute !important; width: 1px; height: 1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; }
+.skip-link { position: fixed; z-index: 100; inset-block-start: -80px; inset-inline-start: 16px; padding: 12px 16px; background: var(--text); color: var(--bg); border-radius: 8px; }
+.skip-link:focus { inset-block-start: 16px; }
+.button { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 8px 20px; border: 1px solid var(--line); border-radius: 8px; font-size: 14px; font-weight: 500; }
+.button-primary { background: var(--text); color: var(--bg); border-color: var(--text); }
+.button-primary:hover { background: var(--primary-hover); border-color: var(--primary-hover); }
+@media (max-width: 620px) { .container { padding-inline: 24px; } }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }

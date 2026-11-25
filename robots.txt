@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://utyemma.vercel.app/sitemap.xml
