@@ -5,29 +5,19 @@ export const skills = [
   ['TypeScript', 'typescript'],
   ['React', 'react'],
   ['Vue.js', 'vuedotjs'],
-  ['Next.js', null],
   ['Inertia.js', 'inertia'],
   ['Livewire', 'livewire'],
   ['Filament', 'filament'],
   ['MySQL', 'mysql'],
   ['PostgreSQL', 'postgresql'],
-  ['MongoDB', null],
+  ['MongoDB', 'mongodb'],
   ['Redis', 'redis'],
-  ['REST APIs', null],
-  ['OAuth 2.0', null],
-  ['Webhooks', null],
-  ['Payment gateways', null],
-  ['Mobile APIs', null],
   ['Linux', 'linux'],
   ['Docker', 'docker'],
-  ['Coolify', null],
-  ['CI/CD', null],
+  ['Coolify', 'coolify'],
   ['Git/GitHub', 'git'],
-  ['Postman', null],
-  ['Queues & scheduled jobs', null],
-  ['QA collaboration', null],
-  ['Debugging', null],
-  ['Architecture documentation', null]
+  ['Bitbucket', 'bitbucket'],
+  ['Postman', 'postman']
 ];
 
 export const selectedProjects = [
