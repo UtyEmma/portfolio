@@ -10,7 +10,7 @@ import {
 } from './content.js';
 
 const email = 'utyemma@gmail.com';
-const resume = '/assets/Utibe-Abasi-Akpan-CV.pdf';
+const resume = '/assets/utyemma-cv.pdf';
 
 function ArrowIcon() {
   return (
@@ -255,7 +255,6 @@ function HomePage() {
             <h1 id="intro-title">Utibe-Abasi Emmanuel</h1>
             <p className="intro-description">
               <strong className="intro-value">I build dependable production web products, from APIs and databases through the interface.</strong>
-              <span className="intro-specialty">At Grandscale Digital, I work as a Senior Full-Stack Engineer and am currently building <a className="intro-project" href="https://lodgedeck.com">Lodge Deck</a> for hotel teams.</span>
               <span className="intro-location">Based in Enugu, Nigeria · Open to remote senior engineering roles</span>
             </p>
             <div className="intro-links" aria-label="Contact and profiles">
