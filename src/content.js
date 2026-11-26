@@ -2,20 +2,32 @@ export const skills = [
   ['Laravel', 'laravel'],
   ['PHP', 'php'],
   ['Node.js', 'nodedotjs'],
-  ['JavaScript', 'javascript'],
   ['TypeScript', 'typescript'],
   ['React', 'react'],
-  ['React Native', 'react'],
   ['Vue.js', 'vuedotjs'],
+  ['Next.js', null],
   ['Inertia.js', 'inertia'],
   ['Livewire', 'livewire'],
   ['Filament', 'filament'],
-  ['Docker', 'docker'],
-  ['Linux', 'linux'],
   ['MySQL', 'mysql'],
   ['PostgreSQL', 'postgresql'],
+  ['MongoDB', null],
   ['Redis', 'redis'],
-  ['Git', 'git']
+  ['REST APIs', null],
+  ['OAuth 2.0', null],
+  ['Webhooks', null],
+  ['Payment gateways', null],
+  ['Mobile APIs', null],
+  ['Linux', 'linux'],
+  ['Docker', 'docker'],
+  ['Coolify', null],
+  ['CI/CD', null],
+  ['Git/GitHub', 'git'],
+  ['Postman', null],
+  ['Queues & scheduled jobs', null],
+  ['QA collaboration', null],
+  ['Debugging', null],
+  ['Architecture documentation', null]
 ];
 
 export const selectedProjects = [
@@ -64,10 +76,36 @@ export const moreProjects = [
 ];
 
 export const experience = [
-  ['Grandscale Digital', 'Founder & CEO · Full-Stack Developer', 'Current'],
-  ['OnlySocial', 'Senior Full-Stack Developer', 'Mar 2024 – Aug 2026'],
-  ['Health Bubba', 'Senior Full-Stack Developer · Part-time', 'Jun 2024 – Jul 2025'],
-  ['Techocraft ICT & other engagements', 'Full-Stack Developer / Technical Tutor', '2019 – 2022']
+  {
+    company: 'Grandscale Digital',
+    role: 'Senior Full-Stack Engineer',
+    period: 'Jan 2023 – Present',
+    summary: 'I lead end-to-end client application development, from architecture and integrations through deployment. My work includes hospitality, blood bank, and school management systems, plus Linux infrastructure and ongoing maintenance.'
+  },
+  {
+    company: 'OnlySocial',
+    role: 'Senior Full-Stack Developer · Full-time',
+    period: 'Mar 2024 – Aug 2026',
+    summary: 'I developed AI-assisted content, social integrations, messaging, and automated publishing, and improved backend workers and production reliability as the platform grew from 13,000+ to 40,000+ users.'
+  },
+  {
+    company: 'Health Bubba',
+    role: 'Senior Full-Stack Developer · Part-time',
+    period: 'Jun 2024 – Present',
+    summary: 'I lead web platform development and build sponsor, affiliate, and admin workflows, working with mobile and backend engineers on a healthcare platform serving 5,000+ doctors and patients.'
+  },
+  {
+    company: 'Xtravalueadded Telecom',
+    role: 'Full-Stack Web Developer',
+    period: 'Apr 2023 – Sep 2024',
+    summary: 'I delivered a bill-payment and utility platform that processed over ₦20 million across 4,000+ users in its first year, including token-authenticated APIs and payment gateway integrations.'
+  },
+  {
+    company: 'Techocraft ICT',
+    role: 'Full-Stack Developer / Tutor',
+    period: 'Nov 2019 – Dec 2022',
+    summary: 'I delivered up to 10 client applications and mentored 30+ developers through practical projects and software engineering best practices.'
+  }
 ];
 
 export const writing = [
@@ -89,10 +127,10 @@ export const caseStudies = {
   lodgedeck: {
     title: 'Lodge Deck',
     status: 'Active development',
-    lede: 'I’m currently building Lodge Deck at Grandscale Digital: hotel management software for properties, rooms, and daily operations.',
-    role: 'Founder & CEO · Grandscale Digital',
+    lede: 'I’m building Lodge Deck at Grandscale Digital: hotel management software for property operations, reservations, and reporting.',
+    role: 'Senior Full-Stack Engineer · Grandscale Digital',
     industry: 'Hospitality SaaS',
-    period: 'Current',
+    period: 'Jan 2023 – Present',
     product: 'https://lodgedeck.com',
     productLabel: 'Visit product',
     image: '/assets/previews/lodgedeck.png',
@@ -104,9 +142,9 @@ export const caseStudies = {
     tools: ['Laravel', 'PHP', 'TypeScript', 'SaaS', 'Product engineering'],
     challenge: 'Hospitality teams need a coherent way to manage properties and everyday hotel workflows without moving between disconnected tools.',
     contributions: [
-      'Developing full-stack product functionality and operational workflows for the Lodge Deck platform.',
-      'Building and refining property, hotel and room-related user experiences as part of the ongoing product.',
-      'Collaborating on product implementation and deployment decisions as features move toward production use.'
+      'Lead end-to-end development of the hospitality management SaaS, from architecture through feature implementation and production deployment.',
+      'Build reservation, property operations, and reporting workflows for hotel teams.',
+      'Integrate intelligent automation while managing Linux infrastructure, deployments, security, and ongoing maintenance.'
     ],
     focus: ['Product workflows', 'Full-stack delivery', 'Iterative releases'],
     outcome: 'An active hospitality software product at Grandscale Digital.',
@@ -131,9 +169,11 @@ export const caseStudies = {
     tools: ['Laravel', 'OAuth 2.0', 'Queues', 'APIs', 'AI integrations'],
     challenge: 'Publishing to multiple social platforms introduces API differences, asynchronous jobs, account authorization and production reliability concerns.',
     contributions: [
-      'Developed scheduling, content calendars and analytics for a platform serving 17,000+ direct users and 40,000+ users overall, including white-label accounts.',
+      'Took ownership of development in an established production SaaS codebase serving 13,000+ users, contributing to continued growth as the platform passed 40,000 users.',
+      'Developed scheduling, content calendars, and analytics for the social publishing platform.',
+      'Built AI-powered content creation, Bluesky and Telegram integrations, unified messaging, folder management, and automated publishing workflows.',
       'Integrated Facebook, Instagram and LinkedIn APIs through OAuth 2.0 for connected-account publishing and engagement workflows.',
-      'Built and maintained queued and scheduled processes for publishing, notifications and media operations, while investigating performance bottlenecks.',
+      'Optimized backend processes, background workers, and infrastructure for performance and production reliability.',
       'Led end-to-end development of a lead-collection and email-verification product with API integrations, webhooks and a companion Chrome extension.'
     ],
     focus: ['Asynchronous work', 'External APIs', 'Operational reliability'],
@@ -147,35 +187,35 @@ export const caseStudies = {
     lede: 'Developing patient-facing products and the supporting business systems',
     role: 'Senior Full-Stack Developer · Part-time',
     industry: 'Health Tech',
-    period: '2024–2025',
+    period: '2024–Present',
     product: 'https://healthbubba.com',
     productLabel: 'Visit product',
     image: '/assets/previews/healthbubba.png',
     imageAlt: 'Health Bubba’s public video consultation artwork',
     imageSize: [931, 545],
     imageCaption: 'Public product artwork from',
-    highlight: '3,000+',
+    highlight: '5,000+',
     highlightNote: 'Patients & clinicians on platform',
     tools: ['Laravel', 'React', 'FilamentPHP', 'Inertia.js', 'Product delivery'],
     challenge: 'Making digital healthcare workflows understandable and useful for patients, clinicians and supporting partners.',
     contributions: [
-      'Contributed as part of the early team to product planning, prioritisation and technical feasibility discussions.',
-      'Led development of the web frontend and supporting full-stack products, including sponsor account workflows.',
-      'Developed affiliate/referral tracking, earnings estimates and administrative dashboards for transactions and reporting.',
-      'Collaborated with mobile and backend engineers to deliver responsive, integrated product experiences.'
+      'Contributed to product strategy, technical planning, and architecture for a healthcare platform serving over 5,000 doctors and patients.',
+      'Led development of the web platform and supporting applications, including sponsor accounts.',
+      'Built affiliate management systems and administrative dashboards for transactions and reporting.',
+      'Coordinated with mobile and backend engineers to align APIs, business logic, and product functionality.'
     ],
     focus: ['Cross-functional delivery', 'Product ownership', 'Admin tooling'],
-    outcome: 'Supported a health-tech product serving more than 3,000 patients and clinicians.',
-    note: 'The 3,000+ figure describes overall platform users.',
+    outcome: 'Contributed to a healthcare platform serving more than 5,000 doctors and patients.',
+    note: 'The 5,000+ figure describes total platform users, not users personally acquired by me.',
     next: ['CAMI Africa School Portal', '/work/cami-school-portal/']
   },
   'cami-school-portal': {
     title: 'CAMI Africa School Portal',
     status: 'Active development',
     lede: 'Purpose-built school portal development for education workflows',
-    role: 'Senior Full-Stack Developer · Grandscale Digital',
+    role: 'Senior Full-Stack Engineer · Grandscale Digital',
     industry: 'Education',
-    period: 'Current',
+    period: 'Jan 2023 – Present',
     product: 'https://portal.camiafrica.org',
     productLabel: 'Visit school portal',
     highlight: 'EdTech',

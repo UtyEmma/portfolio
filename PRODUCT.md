@@ -40,8 +40,10 @@ Visitors arrive on desktop or mobile, scan experience and selected work, and mov
 
 ## Evidence on Hand
 
+- Attached CV: "Utibe-Abasi Akpan Full Stack Dev CV (1).pdf"; use as the source for role titles, dates, experience summaries, and career duration.
+- 6+ years of professional experience per the CV; do not sum overlapping job periods.
+- Experience timeline: Grandscale Digital (Jan 2023–Present), OnlySocial (Mar 2024–Aug 2026), Health Bubba (Jun 2024–Present), Xtravalueadded Telecom (Apr 2023–Sep 2024), and Techocraft ICT (Nov 2019–Dec 2022).
 - Selected project descriptions and public destinations in the homepage and project archive.
-- Experience timeline and role history.
 - Laravel package examples and links.
 - Featured writing links.
 - Professional portrait and resume PDF.

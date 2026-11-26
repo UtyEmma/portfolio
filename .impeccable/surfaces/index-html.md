@@ -17,11 +17,11 @@ Off-white and near-black surfaces, ruled horizontal structure, cobalt accents, a
 
 ## STORY
 
-The visitor hears Utibe-Abasi introduce his current work and role, sees what he has built and contributed, understands his open-source and writing practice, then reaches one of the real external destinations or starts an email conversation.
+The visitor hears Utibe-Abasi introduce his senior engineering experience, skills, and current work, sees what he has built and contributed, understands his open-source and writing practice, then reaches one of the real external destinations or starts an email conversation.
 
 ## FIRST VIEWPORT
 
-Keep the compact header, then show the role, full name, portrait, full-stack delivery position, current leadership/product evidence, location, and primary role-discussion action. The name is the dominant visual, with the portrait held in a small ruled frame and cobalt as the one structural signal.
+Keep the compact header, then show the senior engineering role, 6+ years of experience, full name, portrait, full-stack delivery position, current Grandscale Digital/Lodge Deck work, location, and primary role-discussion action. The name is the dominant visual, with the portrait held in a small ruled frame and cobalt as the one structural signal.
 
 ## FORM
 

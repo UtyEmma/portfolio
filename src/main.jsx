@@ -251,11 +251,11 @@ function HomePage() {
       <main id="main" className="container compact-container">
         <section className="brief-intro identity-intro" id="about" aria-labelledby="intro-title">
           <div className="intro-main">
-            <p className="intro-role">Senior Laravel &amp; Full-Stack Engineer</p>
+            <p className="intro-role">Senior Laravel &amp; Full-Stack Engineer · 6+ years’ experience</p>
             <h1 id="intro-title">Utibe-Abasi Emmanuel</h1>
             <p className="intro-description">
-              <strong className="intro-value">I build dependable web products, from the API and database through the interface.</strong>
-              <span className="intro-specialty">I’m also the founder and CEO at Grandscale Digital, where I’m building <a className="intro-project" href="https://lodgedeck.com">Lodge Deck</a> for hotel operations.</span>
+              <strong className="intro-value">I build dependable production web products, from APIs and databases through the interface.</strong>
+              <span className="intro-specialty">At Grandscale Digital, I work as a Senior Full-Stack Engineer and am currently building <a className="intro-project" href="https://lodgedeck.com">Lodge Deck</a> for hotel teams.</span>
               <span className="intro-location">Based in Enugu, Nigeria · Open to remote senior engineering roles</span>
             </p>
             <div className="intro-links" aria-label="Contact and profiles">
@@ -273,12 +273,12 @@ function HomePage() {
           <ul className="tool-list" aria-label="Technologies and tools">
             {skills.map(([name, asset]) => (
               <li key={name}>
-                <span className="tool-logo" style={{ '--tool-logo': `url('/assets/tools/${asset}.svg')` }} aria-hidden="true" />
+                {asset && <span className="tool-logo" style={{ '--tool-logo': `url('/assets/tools/${asset}.svg')` }} aria-hidden="true" />}
                 <span>{name}</span>
               </li>
             ))}
           </ul>
-          <p className="tool-notes">I use these tools to ship SaaS features, integrate external platforms, improve production reliability, and turn complex workflows into maintainable systems.</p>
+          <p className="tool-notes">I apply this experience across SaaS, health technology, payments, and hospitality—from API design and mobile integrations to deployment, QA, and production support.</p>
         </section>
 
         <section className="brief-section project-section" id="work" aria-labelledby="projects-title">
@@ -297,9 +297,9 @@ function HomePage() {
             <a href={resume} target="_blank" rel="noopener">Full résumé</a>
           </div>
           <ul className="brief-list">
-            {experience.map(([company, role, period]) => (
+            {experience.map(({ company, role, period, summary }) => (
               <li className="brief-row" key={company}>
-                <div className="brief-copy"><h3 className="item-title">{company}</h3><p>{role}</p></div>
+                <div className="brief-copy"><h3 className="item-title">{company}</h3><p>{role}</p><p>{summary}</p></div>
                 <span className="brief-meta">{period}</span>
               </li>
             ))}
@@ -478,7 +478,7 @@ function App() {
           : 'Page not found | Utibe-Abasi Emmanuel';
     const pageDescription = study?.lede || (pathname === '/projects'
       ? 'A selection of SaaS, education, healthcare, commerce, and business platforms I’ve helped build.'
-      : 'Senior Laravel and full-stack engineer available for remote senior roles. Experience building SaaS platforms, APIs, integrations, and production systems.');
+      : 'Senior Laravel and full-stack engineer with 6+ years’ experience building production applications across SaaS, health technology, payments, and hospitality.');
     const socialImage = study
       ? `https://utyemma.vercel.app/assets/social/${routeStudy[1]}.png`
       : pathname === '/projects'
