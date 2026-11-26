@@ -16,7 +16,7 @@ Present a credible, direct portfolio of real work, experience, open-source packa
 
 ## Positioning
 
-A hands-on senior Laravel and full-stack engineer and founder who builds SaaS platforms, integrations, internal tools, and working product systems.
+A hands-on senior Laravel and full-stack engineer who can own product delivery from architecture and APIs through production interfaces, integrations, and operational reliability.
 
 ## Operating Context
 
@@ -24,7 +24,8 @@ Visitors arrive on desktop or mobile, scan experience and selected work, and mov
 
 ## Capabilities and Constraints
 
-- Static portfolio implemented with HTML, CSS, and JavaScript.
+- Static React portfolio implemented with JavaScript and Vite, with route-specific HTML entries for static hosting.
+- Styling and static media are served from `public/assets/`.
 - Existing content and external destinations must remain accurate.
 - Theme preference is stored locally and the page works without JavaScript for primary content.
 - No invented customers, metrics, testimonials, pricing, or commercial claims.
@@ -34,6 +35,8 @@ Visitors arrive on desktop or mobile, scan experience and selected work, and mov
 - Name: Utibe-Abasi Emmanuel.
 - Existing identity: precise, approachable, technically credible.
 - Preserve real portraits, project assets, social links, resume, and package names.
+- Voice: friendly yet formal, conversational, direct, and confident.
+- Use first person when describing the author's own work, without becoming casual or informal.
 
 ## Evidence on Hand
 
